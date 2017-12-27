@@ -49,6 +49,11 @@ namespace osu.Shared.Serialization
             Write(time.ToUniversalTime().Ticks);
         }
 
+        public void Write(ISerializable s)
+        {
+            s.WriteToStream(this);
+        }
+
         public void WriteSerializableList<T>(IList<T> list) where T : ISerializable
         {
             if (list == null)
