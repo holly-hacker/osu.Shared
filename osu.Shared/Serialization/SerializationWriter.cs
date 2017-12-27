@@ -75,7 +75,7 @@ namespace osu.Shared.Serialization
             }
         }
 
-        public void Write<T>(IList<T> list)
+        public void Write<T>(List<T> list)
         {
             if (list == null)
                 Write(-1);
