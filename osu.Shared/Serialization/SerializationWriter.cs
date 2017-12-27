@@ -32,7 +32,12 @@ namespace osu.Shared.Serialization
                     base.Write(bytes);
             }
         }
-        
+
+        public void WriteRaw(byte[] bytes)
+        {
+            base.Write(bytes);
+        }
+
         public override void Write(char[] chars)
         {
             if (chars == null)
@@ -43,7 +48,12 @@ namespace osu.Shared.Serialization
                     base.Write(chars);
             }
         }
-        
+
+        public void WriteRaw(char[] chars)
+        {
+            base.Write(chars);
+        }
+
         public void Write(DateTime time)
         {
             Write(time.ToUniversalTime().Ticks);
