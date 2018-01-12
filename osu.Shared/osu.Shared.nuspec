@@ -2,15 +2,19 @@
 <package >
   <metadata>
     <id>osu.Shared</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <authors>HoLLy</authors>
     <owners>HoLLy</owners>
     <licenseUrl>https://github.com/HoLLy-HaCKeR/osu.Shared/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/HoLLy-HaCKeR/osu.Shared/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Shared code to be used by osu!-related programs.</description>
-    <releaseNotes>Target both .NET Standard 1.0 and .NET Framework 2.0</releaseNotes>
+    <releaseNotes>Create NuGet package</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>osu! osu</tags>
   </metadata>
+
+  <files>
+    <file src="bin\Release\**" target="lib\" />
+  </files>
 </package>
