@@ -9,7 +9,6 @@ namespace osu.Shared.Serialization
     {
         public SerializationReader(Stream input) : base(input) { }
         public SerializationReader(Stream input, Encoding encoding) : base(input, encoding) { }
-        public SerializationReader(Stream input, Encoding encoding, bool leaveOpen) : base(input, encoding, leaveOpen) { }
 
         public byte[] ReadBytes()   // an overload to ReadBytes(int count)
         {

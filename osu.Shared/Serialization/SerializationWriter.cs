@@ -9,7 +9,6 @@ namespace osu.Shared.Serialization
     {
         public SerializationWriter(Stream output) : base(output) { }
         public SerializationWriter(Stream output, Encoding encoding) : base(output, encoding) { }
-        public SerializationWriter(Stream output, Encoding encoding, bool leaveOpen) : base(output, encoding, leaveOpen) { }
 
         public override void Write(string str)
         {
