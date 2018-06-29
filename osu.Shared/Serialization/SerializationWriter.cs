@@ -12,11 +12,11 @@ namespace osu.Shared.Serialization
 
         public override void Write(string str)
         {
-            WriteObject(str);
             if (str == null)
                 Write((byte) TypeBytes.Null);
-            else {
-                Write((byte) TypeBytes.Null);
+            else
+            {
+                Write((byte) TypeBytes.String);
                 base.Write(str);
             }
         }
